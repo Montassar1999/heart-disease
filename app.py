@@ -32,10 +32,10 @@ def predict():
     # Check the output values and retrive the result with html tag based on the value
     if output == 0:
         return render_template('Heart Disease Classifier.html',
-                               result='The patient is not likely to have heart disease!',color='red')
+                               result='The patient is not likely to have heart disease!',color='green')
     else:
         return render_template('Heart Disease Classifier.html',
-                               result='The patient is likely to have heart disease!',color='green')
+                               result='The patient is likely to have heart disease!',color='red')
 
 
 if __name__ == '__main__':
